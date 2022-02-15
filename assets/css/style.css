@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+/*login page css
+*/
+
+.banner-area-start {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url('assets/img/fk.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    height: 75vh;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    content: '';
+    background: #000000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    margin: auto;
+    background: rgba(25, 25, 25, 0.79);
+    text-align: center;
+    transition: 0.35s;
+    border-radius: 15px;
+    position: relative;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+.pass-show {
+    position: relative;
+}
+
+.pass-show .show-btn {
+    position: absolute;
+    font-size: 20px;
+    bottom: 56px;
+    left: 215px;
+}
+
+
+/*sidebar css*/
+
+.wrapper {
+    position: relative
+}
+
+.sidebar-area {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #222D32;
+    padding: none;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.sidebar h3 {
+    background: #357CA5;
+    color: #fff;
+    padding: 15px 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text-muted {
+    color: #adb5bd !important
+}
+
+ul {
+    padding: 0
+}
+
+ul li a img {
+    background: #66BB6A;
+    top: 0;
+    border: none;
+    width: 20px
+}
+
+.sidebar ul {
+    padding: 0;
+    background: #1d3245;
+    margin-top: 17px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    transition: 0.25s ease-in-out;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    margin-left: 10px;
+    display: block
+}
+
+.sidebar ul li a .fas {
+    width: 30px;
+    color: #bdb8d7 !important
+}
+
+i.fas.fa-home:hover,
+i.fas.fa-file-invoice:hover,
+i.fas.fa-video:hover,
+i.fas.fa-id-badge:hover,
+i.fas.fa-external-link-alt:hover,
+i.fas.fa-code:hover,
+i.far.fa-calendar-alt:hover,
+i.far.fa-credit-card:hover {
+    color: #304FFE !important
+}
+
+.sidebar ul li a .far {
+    width: 30px;
+    color: #bdb8d7 !important
+}
+
+.sidebar ul li:hover {
+    background: #1c1d1d
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none
+}
+
+
+/*clock design*/
+
+#clock {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.time {
+    height: 45px;
+    width: 44px;
+    display: inline-block;
+    background: #0d3a5e !important;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.time hr {
+    margin: 0;
+    background: #eee;
+}
+
+#hour,
+#minute,
+#second,
+.time span {
+    height: 65%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.time span:last-child {
+    color: ;
+    font-size: 10px;
+    height: 35% !important;
+}
+
+.clock-red {
+    background: #ff0061 !important;
+}
+.time.date {
+    margin-bottom: -5px;
+    width: 155px;
+}
+
+
+/*topbar area css*/
+
+.topbar {
+    background: #357CA5;
+    padding: 9px;
+    height: 64px;
+}
+
+.dropdown-menu-1 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 5;
+    background: #ddd;
+    right: 0;
+    top: 55px;
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+
+/*index page css*/
+
+.content-area {
+    background: #e7e8f2;
+    min-height: 100vh;
+    margin-left: 250px;
+    width: calc(100% - 250px) !important;
+}
+
+.manage-categories span {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btn-info {
+    background: #357CA5;
+}
+
+
+/*category card css*/
+
+.single-category {
+    border-top: 3px solid #357CA5;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px #3d41cd;
+    transition: 0.5s ease-in-out;
+}
+
+.single-category:hover {
+    box-shadow: 1px 1px 11px #3d41cd;
+}
+
+.single-category img {
+    padding: 20px;
+    width: 155px;
+    margin: auto;
+    height: 145px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.single-category ul li {
+    padding: 7px;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+
+/*inventory table*/
+
+.tableBox {
+    background: white;
+    box-shadow: 1px 1px 11px #c9c7c7;
+    margin: 5px;
+    padding: 11px;
+}
